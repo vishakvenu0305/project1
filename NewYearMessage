@@ -1,0 +1,20 @@
+public class NewYearMessage {
+  private String recipient;
+  private String sender;
+  public NewYearMessage(String recipient, String sender) {
+    this.recipient = recipient;
+    this.sender = sender;
+  }
+  public void send() {
+    System.out.println("Dear " + recipient + ",");
+    System.out.println("Happy New Year! I hope that the year 2023 brings you all the success and happiness");
+    System.out.println("As you embark on your journey as a professional programmer, we want to remind you to always stay curious and keep learning. There is so much to discover and create in the world of programming, and we believe that you have the skills and determination to make your mark in this field.");
+    System.out.println("I wish you all the best in your career and personal life. Here's to a fantastic new year!");
+    System.out.println("Sincerely,");
+    System.out.println(sender);
+  }
+  public static void main(String[] args) {
+    NewYearMessage message = new NewYearMessage("programming trainees", "Jayakrishnan Narayanamoorthy");
+    message.send();
+  }
+}
